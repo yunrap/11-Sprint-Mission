@@ -1,6 +1,6 @@
 import React from "react";
-import Pagenation from "../Pagenation";
-import SearchBox from "../SearchBox";
+import Pagenation from "../common/Pagenation";
+import SearchBox from "../common/SearchBox";
 import heart from "../../images/icon/heart.svg";
 import "./../css/ProductList.css";
 import { Link } from "react-router-dom";
@@ -16,7 +16,11 @@ const Product = ({ productLists }) => {
               <div className="name">{data.name}</div>
               <div className="price">{data.price}</div>
               <div className="count">
-                <img className="image-logo" src={heart} alt="즐겨찾기" />
+                <img
+                  className="product-card_image-logo"
+                  src={heart}
+                  alt="즐겨찾기"
+                />
                 {data.favoriteCount}
               </div>
             </div>

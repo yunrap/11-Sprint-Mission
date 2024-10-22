@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/TextArea.css";
+import "../css/TextArea.css";
 
 const Textarea = ({
   id,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import myprofile from "../images/icon/myprofile.svg";
-import "./css/Nav.css";
+import myprofile from "../../images/icon/myprofile.svg";
+import "../css/Nav.css";
 
 const Nav = () => {
   return (
@@ -11,7 +11,7 @@ const Nav = () => {
           <Link to="">
             <img
               className="image-logo"
-              src={require("../images/logo_image.png")}
+              src={require("../../images/logo_image.png")}
               alt="판다마켓로고"
             />
           </Link>

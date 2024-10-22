@@ -1,15 +1,15 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./DetailPages.css";
-import Category from "../components/Category";
+import "./DetailPage.css";
+import Category from "../components/common/Category";
 import myprofile from "../images/icon/myprofile.svg";
 import { getProductComment, getProductDetail } from "../api/api";
 import heart from "../images/icon/heart.svg";
-import CommentList from "../components/CommentList";
-import TextArea from "../components/TextArea";
-import Button from "../components/Button";
+import CommentList from "../components/common/CommentList";
+import TextArea from "../components/common/TextArea";
+import Button from "../components/common/Button";
 
-const DetailPages = () => {
+const DetailPage = () => {
   const data = useParams();
 
   const [detailData, setDetailData] = useState();
@@ -69,7 +69,7 @@ const DetailPages = () => {
                 <div className="info">상품 태그</div>
                 <Category
                   categoryData={detailData?.tags}
-                  isShowCancleBtn={false}
+                  isShowCancleBtn={true}
                 />
               </div>
             </div>
@@ -120,4 +120,4 @@ const DetailPages = () => {
   );
 };
 
-export default DetailPages;
+export default DetailPage;
